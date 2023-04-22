@@ -1,0 +1,59 @@
+.controls 
+	width: 162px
+	height: 42px
+	border-radius: 30px 
+	border: 1px solid $gray-color
+	background-color: $dark-color
+	position: relative
+	padding: 0 12px
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	
+	&--center 
+		position: absolute
+		z-index: 3 
+		left: 50%
+		bottom: -35px  
+		transform: translateX(-50%) translateY(-45%)
+	
+	svg 
+		fill: $white-color
+	
+	&__item 
+		width: 30px
+		height: 30px
+		transition: transform 0.3s $easeIn
+		cursor: pointer
+		overflow: hidden
+		
+		svg 
+			stroke: $white
+		&:hover 
+			transform: translateX(-4px)
+			opacity: 0.7
+		&--next
+			&:hover
+				transform: translateX(4px)
+	
+	&__play 
+		width: 63px
+		height: 63px
+		border-radius: 50%
+		background-color: $dark-color
+		border: 1px solid $gray-color
+		display: flex 
+		align-items: center 
+		justify-content: center
+		position: absolute 
+		top: 50% 
+		left: 50% 
+		transform: translateX(-50%) translateY(-50%)
+		
+		svg 
+			width: 17px
+			height: 17px
+	
+	@media(max-width: 460px)
+		transform: scale(0.8) translateX(-50%) translateY(-50%)
+		left: 47%

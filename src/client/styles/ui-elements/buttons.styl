@@ -1,0 +1,23 @@
+.btn
+	display: inline-flex
+	align-items: center 
+	text-transform: uppercase 
+	font-weight: 700 
+	font-size: 16px 
+	padding: 0 32px
+	height: 56px
+	white-space: nowrap
+	color: $second-color
+	background-color: $white-color 
+	border-radius: 0px 20px 20px 32px
+	transition: opacity 0.35s $easeInOut
+	cursor: pointer
+	
+	&:hover 
+		opacity: 0.7
+	
+	@media(max-width: 460px)
+		font-size: 14px 
+		padding: 0 25px
+		height: 45px
+		border-radius: 0px 15px 15px 20px
